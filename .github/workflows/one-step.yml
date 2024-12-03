@@ -60,3 +60,5 @@ jobs:
         run: |
           mvn sonar:sonar \
             -Dsonar.projectKey=alansastre_spring-github-actions
+            -Dsonar.organization=alansastre
+            -Dsonar.host.url=https://sonarcloud.io
