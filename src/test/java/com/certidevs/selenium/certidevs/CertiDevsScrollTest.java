@@ -24,8 +24,6 @@ public class CertiDevsScrollTest {
 
     WebDriver driver;
 
-
-
     @BeforeEach
     void setUp() {
         // --headless

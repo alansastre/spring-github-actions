@@ -51,10 +51,10 @@ jobs:
 
       # 6. Run tests with coverage
       - name: Run tests with coverage
-        run: mvn clean verify jacoco:report
+        run: mvn clean verify
 
       # 7. Upload Jacoco coverage to SonarCloud
-      - name: Upload Jacoco coverage to SonarCloud
+      - name: Sonar Analysis
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |

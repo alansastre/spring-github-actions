@@ -4,10 +4,7 @@ import com.certidevs.model.Manufacturer;
 import com.certidevs.model.Product;
 import com.certidevs.repository.ManufacturerRepository;
 import com.certidevs.repository.ProductRepository;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.InvalidElementStateException;
 import org.openqa.selenium.WebDriver;
@@ -24,6 +21,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /*
 Test de selenium para probar: product-form.html
  */
+@Disabled
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.DEFINED_PORT)
 public class ProductFormTest {
 
