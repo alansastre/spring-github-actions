@@ -1,28 +1,29 @@
 
+## CREAR CUENTA EN SONARCLOUD
+
 https://sonarcloud.io/
 
-Leer repositorio GitHub desde SonarCloud
+Entrar con cuenta de Github.
 
-https://sonarcloud.io/account/security
 
+## ANALIZAR PROYECTO EN SONARCLOUD
+
+Pulsar en Analizar nuevo proyecto. (Lo tiene el owner del repositorio)
+
+Leer repositorio GitHub desde SonarCloud.
+
+
+## OPCIONAL, TOKEN DE SEGURIDAD, YA NO ES NECESARIO
+
+Ya no es necesario, antes sí, ahora han implementado el análisis automático.
 
 Generar token:
 
-SPRING-GITHUB-ACTIONS
-
-b87c8ae9f17ddc5703fbb6d30ac79f3361121cf0
-
+https://sonarcloud.io/account/security
 
 Añadir token en GitHub:
-
 
 https://github.com/alansastre/spring-github-actions/settings/secrets/actions/new
 
 Nombre: SONAR_TOKEN
-Valor: b87c8ae9f17ddc5703fbb6d30ac79f3361121cf0
-
-Si está activado Automatic Analysis puede salir error: 
-
-Error:  You are running CI analysis while Automatic Analysis is enabled. Please consider disabling one or the other.
-
-Prueba.
+Valor: xxxx
