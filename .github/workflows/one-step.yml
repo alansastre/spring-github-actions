@@ -58,3 +58,11 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: mvn org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=alansastre_spring-github-actions -Dsonar.organization=alansastre -Dsonar.host.url=https://sonarcloud.io
+
+        # Construir imagen docker
+#      - name: Construir imagen docker
+#        run: docker build -t alansastre/spring-github-actions .
+#
+#        # Push docker image to docker hub
+#      - name: Push docker image to docker hub
+#        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin && docker push alansastre/spring-github-actions
